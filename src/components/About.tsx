@@ -13,10 +13,14 @@ const AboutC = () => {
         variants={fadeIn("right", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
-        voluptates voluptatibus molestiae nam repellat repudiandae optio, sed
-        accusantium consequuntur reprehenderit consequatur saepe voluptate,
-        neque quasi sint animi, sunt libero facilis.
+        I’m Omar Hejazi, a passionate software engineer with a strong interest
+        in AI and building innovative solutions. I specialize in backend and
+        frontend development, working with modern technologies like React,
+        Next.js, NestJS, and Supabase. My recent focus has been on AI-driven
+        projects, including developing intelligent assistants and implementing
+        machine learning models. I enjoy solving complex challenges and
+        constantly seek opportunities to deepen my knowledge in cutting-edge
+        technologies.
       </motion.p>
       <div className="mt-20 flex flex-wrap gap-10">
         {services.map((service, i) => {
