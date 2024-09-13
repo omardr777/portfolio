@@ -18,7 +18,7 @@ export const ProjectCard = ({
 }: IProjectCard) => {
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
-      <Tilt className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full   backdrop-blur-md">
+      <Tilt className="bg-tertiary p-5 rounded-2xl sm:w-[360px] h-[550px] w-full backdrop-blur-md">
         <div className="relative w-full h-[230px]">
           <img
             src={image}
