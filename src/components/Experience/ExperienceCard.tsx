@@ -20,7 +20,7 @@ export const ExperienceCard = ({
         date={date}
         iconStyle={{ background: iconBg }}
         icon={
-          <div className="w-full h-full items-center flex justify-center">
+          <div className="w-full h-full items-center flex justify-center ">
             <img
               src={icon}
               alt={company_name}
@@ -30,7 +30,7 @@ export const ExperienceCard = ({
         }
       >
         <div>
-          <h3 className="text-white text-[24px] font-bold">{title}</h3>
+          <h3 className="text-white text-[24px] font-bold ">{title}</h3>
           <p className="text-secondary text-[1rem] font-semibold m-0">
             {company_name}
           </p>
@@ -40,7 +40,7 @@ export const ExperienceCard = ({
             return (
               <li
                 key={`exp-point-${i}`}
-                className="text-white-100 text-[14px] pl-1 tracking-wider"
+                className="text-white-100 text-[14px] pl-1 tracking-wider "
               >
                 {point}
               </li>
