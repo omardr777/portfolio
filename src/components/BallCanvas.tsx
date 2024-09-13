@@ -5,7 +5,6 @@ import {
   Preload,
   useTexture,
 } from "@react-three/drei";
-import { Technology } from "../types";
 import { Canvas } from "@react-three/fiber";
 import { Suspense } from "react";
 import { CanvasLoader } from "./Loader";
