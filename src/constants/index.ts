@@ -15,14 +15,17 @@ import {
   git,
   figma,
   docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
-  carrent,
   jobit,
-  tripguide,
   threejs,
+  sawi,
+  axenda,
+  kaust,
+  chartWise,
+  mostaqbali,
+  msd,
+  pathfinding,
+  sortvis,
+  blockchain,
 } from "../assets/index";
 import {
   Experience,
@@ -50,19 +53,19 @@ export const navLinks: NavLink[] = [
 
 const services: Service[] = [
   {
-    title: "Web Developer",
+    title: "Web Development",
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "Backend Development",
     icon: mobile,
   },
   {
-    title: "Backend Developer",
+    title: "AI & Machine Learning",
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "DevOps",
     icon: creator,
   },
 ];
@@ -124,55 +127,49 @@ const technologies: Technology[] = [
 
 const experiences: Experience[] = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
-    iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    title: "Software Engineer",
+    company_name: "Sawi",
+    icon: sawi, // Replace with actual icon
+    iconBg: "#fff",
+    date: "December 2023 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Migrated legacy frontend from Redux to React Query, refactored components, and optimized workflows.",
+      "Rebuilt backend from Express.js to NestJS, enhancing performance and scalability.",
+      "Improved backend responsiveness by optimizing API endpoints for high traffic scenarios.",
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    title: "AI & Machine Learning Intern",
+    company_name: "KAUST AI Academy",
+    icon: kaust, // Replace with actual icon
+    iconBg: "#fff",
+    date: "June 2024 - August 2024",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Focused on advanced topics in AI, including generative AI, NLP, and computer vision.",
+      "Engaged in intensive learning and hands-on experience with cutting-edge AI technologies and methodologies.",
     ],
   },
   {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    title: "Software Engineer",
+    company_name: "Axenda",
+    icon: axenda, // Replace with actual icon
+    iconBg: "#1e1e1e",
+    date: "September 2022 - April 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Led the development of a Learning Management System (LMS) for a student platform, integrating with an existing application.",
+      "Built the frontend with React, Next.js, Chakra UI, tRPC, and Zod, focusing on performance and user experience.",
+      "Designed the backend using tRPC, Supabase, Prisma, and Postgres, incorporating role-based access control.",
     ],
   },
   {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    title: "Web Developer Intern",
+    company_name: "Axenda",
+    icon: axenda, // Replace with actual icon
+    iconBg: "#1e1e1e",
+    date: "June 2022 - September 2022",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Enhanced collaboration skills by improving Git workflows and team communication as part of the frontend team.",
+      "Contributed to frontend development and supported various tasks to meet project goals.",
     ],
   },
 ];
@@ -206,130 +203,151 @@ const testimonials: Testimonial[] = [
 
 const projects: Project[] = [
   {
-    name: "Car Rent",
+    name: "Business Analysis AI Assistant",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Developed an AI assistant leveraging LangChain and Streamlit, integrating a Retrieval-Augmented Generation (RAG) system, query decomposition, and a novel method for better data analysis. Includes web search functionality and database integration.",
     tags: [
       {
-        name: "react",
+        name: "LangChain",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "Streamlit",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "Python",
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: chartWise, // replace with actual image path
+    source_code_link: "https://github.com/omardr777/",
   },
   {
-    name: "Job IT",
+    name: "Mostaqbali Landing Page",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Created a responsive landing page for Mostaqbali using Next.js and Tailwind CSS, integrated with a headless CMS (Strapi) to enable dynamic content management.",
     tags: [
       {
-        name: "react",
+        name: "Next.js",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "Tailwind CSS",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "Strapi",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: mostaqbali,
+    source_code_link: "https://github.com/omardr777/",
+  },
+  {
+    name: "Medical Safety Device (MSD)",
+    description:
+      "Designed and developed a web application using Next.js, Tailwind CSS, and Shadcn UI to help users manage medication schedules with automated reminders.",
+    tags: [
+      {
+        name: "Next.js",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Tailwind CSS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Shadcn UI",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: msd,
+    source_code_link: "https://github.com/omardr777/",
+  },
+  {
+    name: "Atheer LMS",
+    description:
+      "Contributed to improving the frontend and adding new features to Atheer, a Learning Management System (LMS), during a volunteer role. Worked with Vue.js to optimize performance and enhance user experience.",
+    tags: [
+      {
+        name: "Vue.js",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "JavaScript",
+        color: "green-text-gradient",
+      },
+      {
+        name: "LMS",
         color: "pink-text-gradient",
       },
     ],
     image: jobit,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/omardr777/",
   },
   {
-    name: "Trip Guide",
+    name: "Pathfinding Visualizer",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "Created an interactive tool that visualizes pathfinding algorithms such as A* and Dijkstra, helping users understand the underlying mechanics of these algorithms.",
     tags: [
       {
-        name: "nextjs",
+        name: "JavaScript",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "Canvas",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "Algorithms",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: pathfinding,
+    source_code_link: "https://github.com/omardr777/PathFinding-Visualizer",
   },
   {
-    name: "Car Rent2",
+    name: "Sorting Algorithm Visualizer",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "A web application that visualizes popular sorting algorithms including Bubble Sort, Quick Sort, Merge Sort, and Insertion Sort. Built using raw HTML, CSS, and JavaScript.",
     tags: [
       {
-        name: "react",
+        name: "JavaScript",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "HTML",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "CSS",
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: sortvis,
+    source_code_link: "https://omardr777.github.io/sortingAlgoVisualizer/",
   },
   {
-    name: "Job IT2",
+    name: "Blockchain Visualizer",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Built a blockchain visualizer using Vue.js and Bootstrap to demonstrate the concepts behind how blockchain technology works.",
     tags: [
       {
-        name: "react",
+        name: "Vue.js",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "Bootstrap",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "Blockchain",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Trip Guide2",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: blockchain,
+    source_code_link: "https://github.com/omardr777/BlockchainVisualizer",
   },
 ];
 
