@@ -22,7 +22,7 @@ export const Earth = ({ isMobile }: IEarth) => {
       />
       <primitive
         object={earth.scene}
-        scale={isMobile ? 0.6 : 2.5}
+        scale={2.5}
         position-y={0}
         rotation={[-0.01, -0.2, -0.1]}
       />
