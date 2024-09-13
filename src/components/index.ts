@@ -6,4 +6,4 @@ export { Feedbacks } from "./Feedbacks";
 export { Hero } from "./Hero";
 export { Navbar } from "./Navbar";
 export { Tech } from "./Tech";
-export { Works } from "./Works";
+export { Works } from "./Works/Works";
