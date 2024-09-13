@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { ChangeEvent, FormEvent, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { slideIn } from "../utils/motion";
 import { styles } from "../style";
@@ -7,7 +7,7 @@ import { EarthCanvas } from "./EarthCanvas";
 import { EmailClient } from "../utils/emailClient";
 
 const ContactC = () => {
-  const formRef = useRef("");
+  const formRef = useRef<HTMLFormElement | null>(null);
   const [isLoading, setIsLoading] = useState(false);
   const [form, setForm] = useState({
     name: "",
@@ -15,7 +15,7 @@ const ContactC = () => {
     message: "",
   });
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsLoading(true);
     EmailClient(
@@ -31,7 +31,9 @@ const ContactC = () => {
       }
     );
   };
-  const handleChange = (e) => {
+  const handleChange = (
+    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     const { name, value } = e.target;
     setForm({ ...form, [name]: value });
   };
