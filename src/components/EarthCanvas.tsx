@@ -8,7 +8,7 @@ interface IEarth {
 }
 
 export const Earth = ({ isMobile }: IEarth) => {
-  const earth = useGLTF("../../public/planet/scene.gltf");
+  const earth = useGLTF("../../planet/scene.gltf");
   return (
     <mesh>
       <hemisphereLight intensity={0.15} groundColor="black" />
