@@ -20,7 +20,8 @@ export const EmailClient = async (
     );
 
     onSuccess();
-  } catch {
+  } catch (e) {
+    console.error(e);
     onError();
   }
 };
