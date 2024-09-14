@@ -6,7 +6,7 @@ import { withSectionWrapper } from "../../hoc/SectionWrapper";
 export const WorksC = () => {
   return (
     <>
-      <Header text="Projects." subText="My work" />
+      <Header text="Projects." subText="My work" id="projects" />
       <div className="w-full flex">
         <p className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px] animate-fade-in">
           This section features projects that demonstrate my technical skills
