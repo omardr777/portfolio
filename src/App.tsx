@@ -9,13 +9,13 @@ import {
   Works,
   StarCanvas,
 } from "./components";
-import CustomCursor from "./components/CustomCursor";
+// import CustomCursor from "./components/CustomCursor";
 
 const App = () => {
   return (
     <BrowserRouter>
-      <CustomCursor />
-      <div className="relative z-0 bg-primary">
+      {/* <CustomCursor /> */}
+      <div className="relative z-0 bg-primary overflow-hidden">
         <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
           <Navbar />
           <Hero />
