@@ -14,7 +14,7 @@ export const ExperienceCard = ({
     <>
       <VerticalTimelineElement
         contentStyle={{
-          background: "#1d1836",
+          background: "#1e1e1e",
           color: "#fff",
         }}
         date={date}
