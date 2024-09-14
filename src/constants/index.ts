@@ -27,14 +27,7 @@ import {
   sortvis,
   blockchain,
 } from "../assets/index";
-import {
-  Experience,
-  NavLink,
-  Project,
-  Service,
-  Technology,
-  Testimonial,
-} from "../types";
+import { Experience, NavLink, Project, Service, Technology } from "../types";
 
 export const navLinks: NavLink[] = [
   {
