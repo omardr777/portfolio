@@ -1,5 +1,5 @@
 import { Service } from "../types";
-import Tilt from "react-parallax-tilt";
+import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
 import { fadeIn } from "../utils/motion";
 

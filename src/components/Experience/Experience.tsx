@@ -8,7 +8,11 @@ import { Header } from "../Header";
 const ExperienceC = () => {
   return (
     <>
-      <Header text="Overview." subText="introduction" id="work" />
+      <Header
+        text="Work Experience."
+        subText="What I have done so far"
+        id="work"
+      />
       <div className="mt-20 flex flex-col">
         <VerticalTimeline>
           {experiences.map((exp, i) => {
