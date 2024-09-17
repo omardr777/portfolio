@@ -36,6 +36,7 @@ import msd from "./msd.png";
 import pathfinding from "./pathfinding.png";
 import sortvis from "./sortvis.png";
 import blockchain from "./blockchain.png";
+import externalLink from "./external-link.svg";
 
 export {
   logo,
@@ -76,4 +77,5 @@ export {
   pathfinding,
   sortvis,
   blockchain,
+  externalLink,
 };

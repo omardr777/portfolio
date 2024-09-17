@@ -1,6 +1,6 @@
 import { Tilt } from "react-tilt";
 import { Project } from "../../types";
-import { github } from "../../assets";
+import { externalLink, github } from "../../assets";
 
 interface IProjectCard extends Project {
   index: number;
@@ -12,6 +12,7 @@ export const ProjectCard = ({
   source_code_link,
   description,
   tags,
+  view_link,
 }: IProjectCard) => {
   return (
     <Tilt
@@ -30,7 +31,19 @@ export const ProjectCard = ({
             className="w-full h-full object-cover rounded-2xl"
           />
 
-          <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
+          <div className="absolute inset-0 flex justify-end m-3 card-img_hover gap-1">
+            {view_link && (
+              <div
+                onClick={() => window.open(view_link, "_blank")}
+                className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+              >
+                <img
+                  src={externalLink}
+                  alt="external link"
+                  className="w-1/2 h-1/2 object-contain"
+                />
+              </div>
+            )}
             <div
               onClick={() => window.open(source_code_link, "_blank")}
               className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"

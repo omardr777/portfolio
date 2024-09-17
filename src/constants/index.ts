@@ -273,6 +273,7 @@ const projects: Project[] = [
     ],
     image: pathfinding,
     source_code_link: "https://github.com/omardr777/PathFinding-Visualizer",
+    view_link: "https://omardr777.github.io/PathFinding-Visualizer/",
   },
   {
     name: "Sorting Algorithm Visualizer",
@@ -294,6 +295,7 @@ const projects: Project[] = [
     ],
     image: sortvis,
     source_code_link: "https://omardr777.github.io/sortingAlgoVisualizer/",
+    view_link: "https://omardr777.github.io/sortingAlgoVisualizer/",
   },
   {
     name: "Blockchain Visualizer",

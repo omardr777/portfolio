@@ -41,4 +41,5 @@ export type Project = {
   tags: ProjectTag[];
   image: string;
   source_code_link: string;
+  view_link?: string;
 };
