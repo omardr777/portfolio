@@ -54,11 +54,11 @@ export const Hero = () => {
               color: "#f3f3f3",
             }}
           />
-          <div className="absolute inset-0 flex justify-center items-center mt-32">
+          <div className="absolute inset-0 flex justify-center items-center sm:mt-32 mt-14">
             <motion.img
               src={headerBanner}
               alt="headerBanner"
-              className="md:size-96 size-56"
+              className="size-80"
               animate={{ y: [0, 20, 0] }}
               transition={{
                 duration: 2,
@@ -68,7 +68,7 @@ export const Hero = () => {
             />
             <div className="absolute xs:bottom-6 bottom-20 w-full flex justify-center items-center">
               <a href="#about">
-                <div className="md:w-[35px] sm:h-[64px] w-[28px] h-[48px] rounded-3xl border-4 border-secondary flex justify-center items-center p-2">
+                <div className="md:w-[35px] sm:h-[56px] w-[28px] h-[48px] rounded-3xl border-4 border-secondary flex justify-center items-center p-2">
                   <motion.div
                     animate={{ y: [0, 24, 0] }}
                     transition={{
@@ -76,7 +76,7 @@ export const Hero = () => {
                       repeat: Infinity,
                       repeatType: "loop",
                     }}
-                    className="w-3 h-3 rounded-full bg-secondary mb-1"
+                    className="md:w-3 md:h-3 size-1  rounded-full bg-secondary mb-1"
                   />
                 </div>
               </a>
